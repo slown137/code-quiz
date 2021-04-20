@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">High score</a>
+            <span id="timer">Time: 0</span>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1 id="title1" class="title" data-state="visible">Coding Quiz Question</h1>
+            <button id="start-button" data-state="visibile">Start</button>
+        </div>
+        <div>
+            <ol id="question-box" data-state="hidden">
+                <span id="question"></span>
+                    <li class="option1 purple hover-button"></li>
+                    <li class="option1 purple hover-button"></li>
+                    <li class="option1 purple hover-button"></li>
+                    <li class="option1 purple hover-button"></li>
+            </ol>
+        </div>
+        <div>
+            <h1>All Done!</h1>
+            <p>Your final score is: <span id="final-score"></span></p>
+            <p>Enter initials: <input type="text"> <button>Submit</button></p> 
+        </div>
+            <h3 id="response" class="top-header"></h3>
+    </main>
+
+    <script src="/assets/script.js"></script>
+    <script src="/assets/score.js"></script>
+</body>
+</html>
