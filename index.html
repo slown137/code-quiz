@@ -5,39 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
+    <header class="main-head">
         <nav>
-            <a href="">HIGHSCORES</a>
-            <span id="timer">Time: 0</span>
+            <a id="hs-link" class="top-left" href="assets/score.html">HIGHSCORES</a>
+            <p class="top-right">Time: <span id="timer">75</span></p>
         </nav>
     </header>
     <main>
+        <div class="info-box">
+            <h1>Coding Quiz Challenge</h1>
+        </div>
         <div class="start-btn-div">
             <button id="start-button" data-state="visibile">Start</button>
         </div>
         <section class="quiz-box">
             <div class="quest-text">
-                <span></span>
+                <h1>Which option has the correct syntax for an alert?</h1>
             </div>
             <div class="answers">
-                <button class="option1 purple hover-button"></button>
-                <button class="option2 purple hover-button"></button>
-                <button class="option3 purple hover-button"></button>
-                <button class="option4 purple hover-button"></button>
+                <button class="option1 purple hover-button">1.  alert: "wow"</button>
+                <button class="option2 purple hover-button">2.  alert= "wow"</button>
+                <button class="option3 purple hover-button">3.  alert("wow");</button>
+                <button class="option4 purple hover-button">4.  alert=wow</button>
             </div>
         </section>
+        <footer class="answer-resp">
+            <span id="correct">Correct!</span>
+            <span id="wrong">Wrong!</span>
+        </footer>
 
-<!--         <div>
+        <section class="end-box">
             <h1>All Done!</h1>
-            <p>Your final score is: <span id="final-score"></span></p>
-            <p>Enter initials: <input type="text"> <button>Submit</button></p> 
-        </div>
-        <footer>
-            <h3 id="response" class="top-header"></h3> 
-        </footer> -->
+            <span>Your final score is: <span id="final-score">X</span></span>
+            <span>Enter initials: <input type="text" id="initial-input"> <button id="submit-button">Submit</button></span> 
+        </section>
     </main>
 
     <script src="assets/plan.js"></script>

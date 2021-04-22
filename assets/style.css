@@ -1,4 +1,143 @@
 :root {
-    --purple: #ae34eb;
+    --purple: #53296b;
     --lightpurple: #c687e6;
+    --white: #f0f0f0;
+    --grey: #878787;
 };
+
+/* making header take up the entire page width */
+header {
+    width: 600px;
+}
+
+/* setting timer to top right */
+.top-right {
+    position: absolute;
+    right: 5px;
+}
+
+/* setting high score link to top left */
+.top-left {
+    position: absolute;
+    left: 5px;
+}
+
+main {
+    height: 500px;
+}
+
+/* setting items to center of page */
+#start-button,
+.quiz-box,
+.answer-resp,
+.end-box,
+.info-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* giving buttons a uniform style */
+button {
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 5%;
+    padding: 1px 5px 1px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--lightpurple);
+}
+
+.info-box {
+    top: 150px;
+    width: 550px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#start-button {
+    top: 250px;
+}
+
+.quiz-box {
+    top: 250px;
+    width: 550px;
+    justify-content: start;
+    display: none;
+}
+
+.answers button {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+
+.answer-resp {
+    position: absolute;
+    top: 335px;
+    width: 540px;
+    border-top: 1px solid var(--grey);
+    display: none;
+}
+
+.answer-resp span {
+    position: absolute;
+    font-style: italic;
+    color: var(--grey);
+    font-size: 20px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+#correct {
+    display: none;
+}
+
+#wrong {
+    display: none;
+}
+
+.end-box {
+    position: absolute;
+    width: 550px;
+    top: 200px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: none;
+}
+
+.end-box h1 {
+    font-size: 30px;
+}
+
+.end-box span {
+    font-size: 20px;
+}
+
+.end-box h1,
+.end-box span {
+    margin: 10px;
+}
+
+#initial-input {
+    height: 20px;
+}
+
+#submit-button {
+    position: relative;
+    top: 2px;
+}
+
+#final-score {
+    margin: 0;
+}
+
+
